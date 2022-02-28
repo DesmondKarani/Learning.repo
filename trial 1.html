@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head> <!-- please remember that there is a difference between "head" and "header."
+"head" tag is usually at the top with stuff like title, scripts, etc.
+"header" is like subtopics in a document. Both MUST have closing tags --> 
+<title>Pesa</title>
+</head>
+<body>
+<a href="#" target="_blank"> <!-- the # symbol is a dead link, it just "reloads" the page -->
+
+<img src="https://www.istockphoto.com/photo/mountain-landscape-gm517188688-89380423" alt="Cool iStock Mountains"> <!--
+DO NOT, I repeat, DO NOT forget to use alt tag to ensure that users know what is supposed to load if the image doesn't
+-->
+
+</a> <br />
+<a href="https://www.istockphoto.com/photo/mountain-landscape-gm517188688-89380423" target="_blank">
+<p>More Photos Here</p>
+</a>
+<a href="#mende"> <p> click to jump to bottom </p> </a> <!-- # symbol here directs the user to a 
+another section of the page, marked with id tag, see below -->
+<header> Pesa </header>
+<main>
+<h1>
+trial with notepad++
+</h1>
+<hr />
+<p> lakini mbona pesa ukua ngumu ivo kusaka? <br /> mmhh???? <br />
+nikikaza na hii code naomoka soon <br />
+</p>
+</main> <!-- REMEMBER! "main" tag is useful in highlighting the dominant content of the topic. good for SEO
+Also, main has no effect on the page structure -->
+<hr />
+<ul>
+<li>des</li>
+<li>grace</li>
+<li>wendy</li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />
+<ol>
+<li>pesa</li>
+<li>grace</li>
+<li>wendy</li>
+</ol>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<p>
+toa maoni bro
+</p>
+<form action="https://petertyson.co.uk/"> <!-- form element can contain "action" of where the form is to be
+submitted -->
+Maoni <!-- usually a way to explain what the form is for to the user.. just before the input element-->
+<input type="text" placeholder="weka kitu hapa" size="9px" required> <!--input tag is self closing. 
+also, learn to use placeholder tag to remind the user what the input is for. Finally, using "required" tag
+ensures that this section is not ignored by the user. -->
+
+<button type="submit" id="mende"> Twende </button> <!-- button tag should not be forgotten in the input. please label
+which type it is. The id tag has been used here to create an internal link, not a part of this code! -->
+
+<br /> <br />
+<div> <!-- this element is usually used to group the structure for further manipulation 
+with CSS or Javascript-->
+leo utakula nini?
+<label for="rice">
+<input id="rice" type="radio" name="rice-dengu" value="rice"> rice <!-- when creating radio buttons, all
+the buttons must have the same "name" type. do not forget to add "type" of the button-->
+</label>
+<label for="dengu">
+<input id="dengu" type="radio" name="rice-dengu" value="dengu"> dengu
+</label>
+<button type"submit">finya bass</button> <br /> <br />
+ama, hungetaka pesa?
+<label for="ndio-mkubwa">
+<input id="ndio-mkubwa" type="checkbox" name="teke-tamu" value="ndio-mkubwa"> Ndio Mkubwa <!-- for checkbox inputs, REMEMBER 
+that related inputs must have the same "name"-->
+</label>
+<label for="la-maze">
+<input id="la-maze" type="checkbox" name="teke-tamu" value="la-maze"> La Maze
+</label>
+<form>
+</div>
+</body>
+</html>
