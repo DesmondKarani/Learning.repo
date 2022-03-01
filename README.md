@@ -5,4 +5,4 @@ I learned much from this initial practice, especially about lists and forms.
 One of the hardest things I encountered was the best way to incorporate effective forms.
 I had to research other content to get the skills needed for this.
 I decided to create a sign up form with what I had learned.
-This was form was very enlightneing.
+The process of creating this form and make it work was very enlightneing.
