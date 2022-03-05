@@ -11,3 +11,5 @@ Most of the HTML concepts are easy to understand. The only area you are likely t
 
 On CSS, you will immediately realize that it relies heavily on HTML DOM, reinforcing your understanding of this markup language even further. The CSS ruleset will demand you learn how various selectors interact with HTML. Don’t be overwhelmed by the jargon; trust me, you’ll learn them with time.
 
+
+There is a LOT to learn in CSS, especially about styling tables and lists. Do not skimp on this area.
