@@ -1,0 +1,58 @@
+#kk{
+	width:900px;
+	height:auto;
+	margin:0 auto;
+	/*text-align:center;*/
+}
+#ddd{
+	text-align:center;
+}
+#cat{
+	width:200px;
+	border:solid red;
+	border-radius:20%;
+	
+}
+#kich:hover{
+	color:red;
+}
+#fff{
+	padding:30px;
+	/*width:900px;
+	/*height:auto;*/
+	margin: 20px 100px 20px 100px;
+	background-color:yellow;
+  /*display: flex;
+  justify-content: center;*/
+}
+#check{
+	text-align:center;
+	background-color:silver;
+	padding:20px;
+		border:solid green;
+		border-radius:10px;
+}
+#kich2{
+ display: block;
+	text-align: center;
+}
+ul{
+	list-style-type:square;
+	list-style-position:inside; /*this ensures bullets move with the list, weeh!*/
+	text-align:left;
+	display:inline-block; /*this makes sure that the list is aligned*/
+}
+ol{
+	list-style-type:upper-roman;
+text-align:left;
+list-style-position:inside;
+display:inline-block;
+}
+label{
+	display:inline-block;
+	text-align:left;
+}
+#fofo{
+	display:block;
+	text-align:right;
+}
