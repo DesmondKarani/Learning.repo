@@ -1,0 +1,38 @@
+
+body{
+	margin:2rem;
+	text-align:center;
+	background-color:#16F08A;
+}
+img{
+width:14rem;
+border-radius:10%;
+}
+h1{
+	font-family:'Monoton', cursive;
+}
+p{
+	font-family: 'Bad Script', cursive;
+}
+form{
+	border:dotted gray;
+	border-radius:3rem;
+	padding:3rem;
+	display:inline-block;
+	text-align:left;
+	background-color:silver
+}
+input:invalid{
+	border:1px dashed red;
+}
+input:invalid:required{
+	background-image: linear-gradient(to right, pink, lightgreen);
+}
+input:valid{
+	border:2px solid green;
+}
+@media (min-width: 40rem){
+	body{
+		background-color:#BBFA05;
+	}
+}

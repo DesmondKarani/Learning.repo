@@ -1,0 +1,105 @@
+<!--This is for an application form that I thought about to practice CSS and HTML-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Application</title>
+<link rel="stylesheet" href="mkubwa.css">
+<a href="#">
+<img src="C:\Users\karan\Desktop\vacancy-rubber-stamp.png" alt="We are Hiring!">
+</a>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+
+<body>
+<h1>Application Form</h1>
+<p>We will be <mark title="across Kenya">hiring 50 new employees</mark> by the end of <time datetime="2022-5-23T08:00:00">May</time>.<br /> Please fill out the form below if you would like to join our team and be part of greatness.</p>
+
+<form action="karani.com" method="post" autocomplete="off">
+
+
+
+<!--============================================================================================================================
+
+Please remember that comments or input areas that require users to write things requires "textarea" tag, not "input"
+============================================================================================================-->
+<label for="cover_page">Tell us how you feel about our organization</label>
+<textarea type="text" id="cover_page" name="application" value="cover page" required></textarea><br /><br />
+
+<p>Please select your hobbies</p><br />
+<label for="football">
+<input type="checkbox" id="football name="application" value="soccer">
+Soccer</label>
+<br />
+<label for="music">
+<input type="checkbox" id="mnusic" name="application" value="music">
+Listening to Music</label>
+<br />
+<label for="coding">
+<input type="checkbox" id="coding" name="application" value="coder">
+Coding</label>
+<br />
+<label for="hiking">
+<input type="checkbox" id="hiking" name="application" value="adventurer">
+Hiking</label>
+<br />
+<label for="swimming">
+<input type="checkbox" id="Swimming" name="application" value="swimmer">
+Swimming</label>
+<br />
+<label for="reading">
+<input type="checkbox" id="reading" name="application" value="intellect">
+Soccer</label><br />
+
+<p>Would you consider working full time, including saturdays?</p><br />
+
+<label for="yes">Yes</label>
+<input type="radio" id="yes" name="flexibility" value="flexible">
+
+<label for="No">No</label>
+<input type="radio" id="No" name="flexibility" value="not flexible">
+
+<label for="maybe"></label>Perhaps
+<input type="radio" id="maybe" name="flexibility" value="could work"><br /><br />
+
+<label for="name">Your Name</label>
+<input type="text" id="name" name="application" placeholder="e.g Desmond Karani" required><br /><br />
+
+<label for="email">Your Email Address</label>
+<input type="email" id="email" name="application" placeholder="e.g dk@des.com" required><br /><br />
+
+
+
+<!--================================================================================================
+when inputing pattern, the parenthesis indicate range while curly brackets limit the number of digits. maxlength attribute also includes spaces in the phone numbers as directed to the user.
+=================================================================================================-->
+<label for="phone">Your Phone Number</label>
+<input type="tel" id="phone" name="application" placeholder="e.g 0720 000 000" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" maxlength="10" title="Please Input 10 Digits Code Like 0710 000 000, (no spaces)" required><br /><br />
+
+
+
+<p>Please select your sex</p>
+<label for="female">Female</label>
+<input type="radio" id="female" name="sex" value="female">
+
+<label for="male">Male</label>
+<input type="radio" id="male" name="sex" value="male">
+
+<label for="private">Prefer Not To Say</label>
+<input type="radio" id="private" name="sex" value="private"><br /><br />
+
+
+<label for="cv">Please Upload Your CV</label>
+<input type="file" id="cv" name="resume" accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"><br /><br />
+
+<button type="submit">Apply</button>
+</form>
+
+
+</body>
+
+
+</html>
