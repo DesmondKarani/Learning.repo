@@ -22,3 +22,36 @@ When inputing pattern, the parenthesis indicate range while curly brackets limit
 For example, in pattern="[0-9]{4}[0-9]{3}[0-9]{3}" maxlength="10", [0-9] means only number from 0 to 9, while {4} means only four numbers can be used in this part. Please remember that in patterns, spaces or dashes between curly bracket and subsequent parenthesis also count! (eg pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" maxlength="10" will requires users to input even the dashes, but since the maxlegth in this case is 10, then the last two digits will not be allowed. Changing max digits to 12 is the only way to accomodate everything).
 
 I have learned about using the autocomplete="off" feasture in the form element to prevent browsers from autocompleting inputs.
+
+
+
+
+Today I have learned about the use of !important to override styles in CSS. While cascade, inline styles, and specifity rule always compete, using !important stops this competition to a specific value.
+
+I have also learned about the use of CSS variables to help avoid repetition in styles and ensure that styles can be easily changed without seeking every property value. Variables are annotated as --variable:value;. For example, --desmond:blue;. If you want this variable to be used "globally," you must set it in the :root, which is the html element. For instance, 
+
+:root{
+--desmond-color:blue;
+}
+.
+
+
+I have also learned that variables, when declared in rulesets, must have fallback value. eg
+
+form{
+background-color:  var(--desmond-color, green);
+}
+
+In this case, if the variable is misspelt, the fallback wiill be green.
+
+
+Media quiries are powerful tools to help you define conditions for styles. for example:
+
+@media (max-width: 35rem){
+	img{
+		width:9rem;
+		border-radius:50%;
+	}
+}
+
+This will set width to 9rem and border-radius to 50% if an element is within the width of 35rem.
