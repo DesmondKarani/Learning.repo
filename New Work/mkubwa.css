@@ -1,12 +1,58 @@
-
+:root{
+	background-color:orange;
+	--desmond:silver;
+	padding:2rem;
+}
 body{
-	margin:2rem;
+	margin:auto;
 	text-align:center;
 	background-color:#16F08A;
+	padding:1rem;
+	border-radius:2rem;
+	width:60rem;
 }
+/*===================================================================
+PLEASE REMEMBER!!!!!!!!!
+you can use the keyword "!important" in CSS to override everything else if you encounter issues with styling!!!!!!!!
+
+
+You can also create CSS variables that you can use during styling. Variables start with -- eg, --desmond:blue; 
+the use this varible elsewhere as property:var(--xx);. For example, background-color: var(--desmond); will turn background to blue.
+varaibles can be reused as many times as possible.
+
+If you want a selector to be used "globally," you need to define it inside the :root selector. In this case, :root is the html element.
+Variables are also case sensitive!!!!
+
+
+
+
+
+
+It is critical to use variables with fallback values, just in case a variable is misspelt. 
+In the above example, you can say, background-color: var(--deesmond, blue); whereby blue is a fallback value.
+
+
+
+
+You can also provide more than one fall-back value in a code. eg background-color:var(--desmond, var(--karani, red));
+In this case, if --desmond and --karani fails, red will be used.
+
+
+
+
+fallback values should also be considered to help improve compatibility. This can be done by using redundant declarations and then overriding them with 
+other rulesets down the line.
+===========================================================================
+*/
 img{
 width:14rem;
 border-radius:10%;
+}
+@media (max-width: 35rem){
+	img{
+		width:9rem;
+		border-radius:50%;
+	}
 }
 h1{
 	font-family:'Monoton', cursive;
@@ -20,7 +66,7 @@ form{
 	padding:3rem;
 	display:inline-block;
 	text-align:left;
-	background-color:silver
+	background-color: var(--desmond, pink);
 }
 input:invalid{
 	border:1px dashed red;
@@ -35,4 +81,7 @@ input:valid{
 	body{
 		background-color:#BBFA05;
 	}
+}
+[type="radio"]{
+	margin-bottom:30px;
 }
